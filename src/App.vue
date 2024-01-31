@@ -16,6 +16,8 @@ function m() {
 </script>
 
 <template>
+  <a href="" class="whatsapp fixed bottom-14 right-5 rounded-full shadow-md "><img class="" width="70" height=""
+      src="/whatsapp.svg" alt=""></a>
   <Swiperview />
 
   <!--mob-->
@@ -149,6 +151,11 @@ function m() {
 </template>
 
 <style scoped>
+.whatsapp {
+  position: fixed;
+  z-index: 99999;
+}
+
 /* .router-link-exact-active div {
   width: 50%;
   height: 0.25rem;

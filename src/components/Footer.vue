@@ -40,7 +40,7 @@
     <div class="bg-slate-950 -mt-10">
         <div class="w-11/12 h-1 bg-slate-900 mx-auto rounded-full"></div>
     </div>
-    <div class="bottom md:flex justify-between my-auto p-4 md:px-10 space-y-5 md:space-y-0 bg-slate-950 text-white">
+    <div class="bottom md:flex justify-between my-auto p-4 md:px-10 space-y-5 md:space-y-0 h-40 bg-slate-950 text-white">
         <p class="md:text-lg text-center">&copy;2024 Tawasul For Sourcing - شركة تواصل لتوريد العمالة</p>
 
         <div class="credits flex space-x-2 text-center justify-center">

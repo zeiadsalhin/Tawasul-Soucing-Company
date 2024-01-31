@@ -94,7 +94,7 @@ import Swiperjobs from '../components/Swiperjobs.vue'
     width: 100%;
     /* overflow: hidden; */
     position: relative;
-    z-index: 99999;
+    z-index: 9999;
     border-bottom-right-radius: 5000px 400px;
     border-bottom-left-radius: 5000px 400px;
 }
