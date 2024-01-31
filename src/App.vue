@@ -48,7 +48,7 @@ function m() {
 
   </div>
 
-  <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidden sticky top-0 z-10 justify-between font-semibold ">
+  <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidden justify-between font-semibold ">
     <div class="flex justify-between">
       <a href="https://pactel.info" onclick=""> <img src="/logo.svg" width="80" height="60" class="justify-between m-4"
           alt="logo"></a>
