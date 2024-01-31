@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
+import Swiperview from './components/Swiperview.vue'
 import About from './components/About.vue'
 import Features from './components/Features.vue'
 import Liner from './components/Services.vue'
@@ -15,143 +16,143 @@ function m() {
 </script>
 
 <template>
-  <div class="head">
-    <!--mob-->
-    <div class=" flex justify-center">
-      <div class="menu notactive space-y-3 bg-gray-600 text-xl font-semibold bg-transparent text-gray-300 bg-gray-00 "
-        id="menu">
+  <Swiperview />
 
-        <div class="options mt-10 mb-10 space-y-2">
-          <RouterLink to="/" @click="m"><a href="#" class="block -mb-6">Home</a></RouterLink>
-          <!-- <hr class="border-1 rounded border-gray-400 m- opacity-50 "> -->
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Services</RouterLink>
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Work</RouterLink>
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">Required Documents</RouterLink>
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">How to get a contract</RouterLink>
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">Member SignIn</RouterLink>
-          <RouterLink to="/" @click="m" id="menub" class="block p-2">Demanding Jobs</RouterLink>
-          <a href="#" @click="m" class="block p-4 bg-slate-800 font-medium w-11/12 mx-auto rounded-lg">Contact</a>
-        </div>
-        <hr class="border-1 rounded border-gray-600 m-10 opacity-50 ">
-        <div class="mb mt-20">
-          <button @click="m" id="menub" class="md:hidden justify-between hover:bg-transparent">
-            <div class="container dark:invert px-4">
-              <div class="bar11"></div>
-              <div class="bar22"></div>
-              <div class="bar33"></div>
-            </div>
-          </button>
-        </div>
+  <!--mob-->
+  <div class=" flex justify-center">
+    <div class="menu notactive space-y-3 bg-gray-600 text-xl font-semibold bg-transparent text-gray-300 bg-gray-00 "
+      id="menu">
+
+      <div class="options mt-10 mb-10 space-y-2">
+        <RouterLink to="/" @click="m"><a href="#" class="block -mb-6">Home</a></RouterLink>
+        <!-- <hr class="border-1 rounded border-gray-400 m- opacity-50 "> -->
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Services</RouterLink>
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Work</RouterLink>
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">Required Documents</RouterLink>
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">How to get a contract</RouterLink>
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">Member SignIn</RouterLink>
+        <RouterLink to="/" @click="m" id="menub" class="block p-2">Demanding Jobs</RouterLink>
+        <a href="#" @click="m" class="block p-4 bg-slate-800 font-medium w-11/12 mx-auto rounded-lg">Contact</a>
       </div>
-
-    </div>
-
-    <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidden sticky top-0 z-10 justify-between font-semibold ">
-      <div class="flex justify-between">
-        <a href="https://pactel.info" onclick=""> <img src="/logo.svg" width="80" height="60" class="justify-between m-4"
-            alt="logo"></a>
-        <!-- <h1 style="font-weight: 800;" class="p-3 text-3xl text-gray-300">Courses</h1> -->
+      <hr class="border-1 rounded border-gray-600 m-10 opacity-50 ">
+      <div class="mb mt-20">
         <button @click="m" id="menub" class="md:hidden justify-between hover:bg-transparent">
           <div class="container dark:invert px-4">
-            <div class="bar1">
-              <hr class="border-2 bg-black border-black">
-            </div>
-            <!-- <div class="bar2">
-              <hr class="border-2 bg-black border-black">
-            </div> -->
-            <div class="bar3">
-              <hr class="border-2 bg-black border-black">
-            </div>
+            <div class="bar11"></div>
+            <div class="bar22"></div>
+            <div class="bar33"></div>
           </div>
         </button>
       </div>
-
-    </nav>
-
-    <!---->
-    <RouterView />
-    <!-- <div class="bar"></div> -->
-    <header class=" flex-col justify-center mx-auto text-black bg-gray-200 hiddenm">
-      <div class="up flex justify-around -space-x-32 bg-slate-950 text-white p-2">
-        <div class="flex justify-start mr-96"><img alt="logo" class="logo" width="70" height="100" src="/logo.svg">
-        </div>
-
-        <div class="contact flex justify-center space-x-5">
-          <div class="p1 flex my-auto">
-            <img class="my-auto" width="20" height="" src="/phone.svg">
-            <p class="p-1 text-lg">+20 1000440033</p>
-          </div>
-          <div class="p2 flex my-auto">
-            <img class="my-auto" width="20" height="" src="/phone.svg">
-            <p class="p-1 text-lg">+20 100033033</p>
-          </div>
-          <div class="email flex my-auto">
-            <img class="my-auto" width="20" height="" src="/email.svg">
-            <p class="p-1 text-lg">info@tawasol.corp</p>
-          </div>
-          <div class="social flex space-x-3 my-auto">
-            <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/facebook.svg"></button>
-            <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/x.svg"></button>
-            <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/instagram.svg"></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center space-x-20 p-2">
-        <div class="my-auto">
-          <nav class="text-lg font-semibold flex justify-center space-x-5">
-            <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Home
-            </RouterLink>
-            <RouterLink to="/1" active-class="text-blue-800" class="hover:text-blue-800">Our Services
-            </RouterLink>
-            <RouterLink to="/2" active-class="text-blue-800" class="hover:text-blue-800">Our Work
-            </RouterLink>
-            <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Required Documents
-            </RouterLink>
-            <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">How to get a contract
-            </RouterLink>
-            <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Member SignIn
-            </RouterLink>
-            <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Demanding Jobs
-            </RouterLink>
-            <button href="#" class="px-5 bg-blue-600 text-white font-medium rounded-full">Contact</button>
-            <button href="#" class="px-2 hover:bg-transparent font-medium rounded-full">عربي</button>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-
-    <RouterView />
-    <div
-      class="flex-col justify-center md:translate-x-52 text-2xl space-y-5 md:p-8 p-5 md:mt-36 rounded-sm mt-28 md:mb-48 mb-32 text-center bg-white text-slate-900 md:w-1/3 w-11/12 mx-auto shadow-3xl font-bold">
-
-      <p class="md:text-3xl font-extrabold p-2">We have a large Database Worldwide
-      <div class="line mt-5 mx-auto rounded-full w-1/2 h-1 bg-slate-500"></div>
-      </p>
-      <p class="text-lg font-medium">Praesent ultrices, sapien sit amet pharetra blandit, nibh nisi auctor tellus, at
-        mollis
-        nisl nibh
-        congue
-        nisi. Sed tellus augue, lacinia eget metus sed, ornare vulputate tortor. Sed eleifend ultricies erat
-        molestie ultrices.</p>
-      <button class="bg-blue-700 text-white font-medium text-lg px-5 py-1 rounded-sm">Know More</button>
     </div>
 
-    <About />
-    <Features />
-    <Liner />
-    <Map />
-    <Contact />
-    <Information />
-    <Footer />
   </div>
+
+  <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidden sticky top-0 z-10 justify-between font-semibold ">
+    <div class="flex justify-between">
+      <a href="https://pactel.info" onclick=""> <img src="/logo.svg" width="80" height="60" class="justify-between m-4"
+          alt="logo"></a>
+      <!-- <h1 style="font-weight: 800;" class="p-3 text-3xl text-gray-300">Courses</h1> -->
+      <button @click="m" id="menub" class="md:hidden justify-between hover:bg-transparent">
+        <div class="container dark:invert px-4">
+          <div class="bar1">
+            <hr class="border-2 bg-black border-black">
+          </div>
+          <!-- <div class="bar2">
+              <hr class="border-2 bg-black border-black">
+            </div> -->
+          <div class="bar3">
+            <hr class="border-2 bg-black border-black">
+          </div>
+        </div>
+      </button>
+    </div>
+
+  </nav>
+
+  <!---->
+  <RouterView />
+  <!-- <div class="bar"></div> -->
+  <header class=" flex-col justify-center mx-auto text-black bg-gray-200 shadow-lg hiddenm">
+    <div class="up flex justify-around -space-x-32 bg-slate-950 text-white p-2">
+      <div class="flex justify-start mr-96"><img alt="logo" class="logo" width="70" height="100" src="/logo.svg">
+      </div>
+
+      <div class="contact flex justify-center space-x-5">
+        <div class="p1 flex my-auto">
+          <img class="my-auto" width="20" height="" src="/phone.svg">
+          <p class="p-1 text-lg">+20 1000440033</p>
+        </div>
+        <div class="p2 flex my-auto">
+          <img class="my-auto" width="20" height="" src="/phone.svg">
+          <p class="p-1 text-lg">+20 100033033</p>
+        </div>
+        <div class="email flex my-auto">
+          <img class="my-auto" width="20" height="" src="/email.svg">
+          <p class="p-1 text-lg">info@tawasol.corp</p>
+        </div>
+        <div class="social flex space-x-3 my-auto">
+          <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/facebook.svg"></button>
+          <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/x.svg"></button>
+          <button class="hover:bg-transparent"><img class="my-auto" width="20" height="" src="/instagram.svg"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-20 p-2">
+      <div class="my-auto">
+        <nav class="text-lg font-semibold flex justify-center space-x-5">
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Home
+          </RouterLink>
+          <RouterLink to="/1" active-class="text-blue-800" class="hover:text-blue-800">Our Services
+          </RouterLink>
+          <RouterLink to="/2" active-class="text-blue-800" class="hover:text-blue-800">Our Work
+          </RouterLink>
+          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Required Documents
+          </RouterLink>
+          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">How to get a contract
+          </RouterLink>
+          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Member SignIn
+          </RouterLink>
+          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Demanding Jobs
+          </RouterLink>
+          <button href="#" class="px-5 bg-blue-600 text-white font-medium rounded-full">Contact</button>
+          <button href="#" class="px-2 hover:bg-transparent font-medium rounded-full">عربي</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <RouterView />
+  <div
+    class="flex-col justify-center md:translate-x-52 text-2xl space-y-5 md:p-8 p-5 md:mt-36 rounded-sm mt-28 md:mb-48 mb-32 text-center bg-white text-slate-900 md:w-1/3 w-11/12 mx-auto shadow-3xl font-bold">
+
+    <p class="md:text-3xl font-extrabold p-2">We have a large Database Worldwide
+    <div class="line mt-5 mx-auto rounded-full w-1/2 h-1 bg-slate-500"></div>
+    </p>
+    <p class="text-lg font-medium">Praesent ultrices, sapien sit amet pharetra blandit, nibh nisi auctor tellus, at
+      mollis
+      nisl nibh
+      congue
+      nisi. Sed tellus augue, lacinia eget metus sed, ornare vulputate tortor. Sed eleifend ultricies erat
+      molestie ultrices.</p>
+    <button class="bg-blue-700 text-white font-medium text-lg px-5 py-1 rounded-sm">Know More</button>
+  </div>
+
+  <About />
+  <Features />
+  <Liner />
+  <Map />
+  <Contact />
+  <Information />
+  <Footer />
 </template>
 
 <style scoped>
 .head {
   height: 95vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('https://wallpapercave.com/wp/wp7728113.jpg') no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('') no-repeat center;
   background-size: cover;
 
 }

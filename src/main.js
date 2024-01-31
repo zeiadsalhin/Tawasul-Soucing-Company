@@ -1,5 +1,7 @@
 import './assets/main.css'
 import './assets/index.css'
+import Swiper from 'swiper';
+import 'swiper/css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
