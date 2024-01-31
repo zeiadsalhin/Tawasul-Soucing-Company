@@ -25,14 +25,19 @@
             </div>
         </div>
     </div>
-    <div class="line2 flex bg-white w-full h-48"></div>
+    <div class="line3 flex bg-white w-full h-48 shadow-md"></div>
 </template>
 <style>
 .line3 {
     overflow: hidden;
     position: absolute;
-    z-index: 22;
+    z-index: 1;
     transform: SkewY(-3deg);
     margin-top: -5rem;
+}
+
+.images {
+    position: relative;
+    z-index: 2;
 }
 </style>

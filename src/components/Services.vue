@@ -1,4 +1,5 @@
 <script setup>
+import Swiperjobs from '../components/Swiperjobs.vue'
 
 </script>
 <template>
@@ -54,11 +55,15 @@
                 </ul>
                 <!-- <button class="m-6 p-3 rounded-md bg-blue-700 text-white">Request Estimate</button> -->
             </div>
-            <div class="img md:my-20 md:p-5 p-5 text-3xl text-slate-950 font-semibold text-center">
+            <div
+                class="img flex-col justify-center md:w-1/2 md:my-20 md:p-5 p-2 mt-5 text-3xl text-slate-950 font-semibold text-center">
                 <h1 class="p-2">Latest Damending Jobs</h1>
                 <div class="line mt-5 mb-5 mx-auto rounded-full w-1/2 h-1 bg-slate-500"></div>
-                <img class="rounded-lg" width="2000" height="100%"
-                    src="https://images.ctfassets.net/p03bi75xct27/1O76UqN7I2xPGqSzrShDs8/6a9a01212dca0e9dbbfd442c1f800698/5G8A8295.jpg?q=80&fm=webp&w=2048">
+                <div class="gallery mx-auto rounded-lg">
+                    <Swiperjobs />
+                </div>
+                <!-- <img class="rounded-lg" width="2000" height="100%"
+                    src="https://images.ctfassets.net/p03bi75xct27/1O76UqN7I2xPGqSzrShDs8/6a9a01212dca0e9dbbfd442c1f800698/5G8A8295.jpg?q=80&fm=webp&w=2048"> -->
                 <!-- <div class="text bg-red-600 text-white p-3 rounded-tl-3xl -translate-x-10 -translate-y-12 w-fit">
                     <h1 class="text-xl font-bold">Call Us now</h1>
                     <p class="text-lg">+1(222)-222-1188</p>
@@ -66,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="curve flex bg-gray-200  h-1/5 -mt-8"></div>
+    <div class="curve  bg-gray-200  w-full h-32 md:-mb-20 -mb-48"></div>
 </template>
 <style scoped>
 /* .line2 {
@@ -79,18 +84,24 @@
 
 .services {
     overflow: hidden;
-    position: relative;
-    z-index: -9999;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    /* position: relative; */
+    /* z-index: -9999; */
+    /* border-bottom-left-radius: 2rem; */
+    /* border-bottom-right-radius: 2rem; */
 }
 
 .curve {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
-    z-index: -9999;
+    z-index: 99999;
     border-bottom-right-radius: 5000px 400px;
     border-bottom-left-radius: 5000px 400px;
+}
+
+.gallery {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
 }
 </style>

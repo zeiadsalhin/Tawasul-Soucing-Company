@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="line2 flex bg-slate-950 w-full h-32"></div>
+    <div class="line2 flex bg-slate-950 w-full h-32 md:shadow-2xl"></div>
 </template>
 <style>
 .line2 {

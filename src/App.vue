@@ -139,7 +139,6 @@ function m() {
       molestie ultrices.</p>
     <button class="bg-blue-700 text-white font-medium text-lg px-5 py-1 rounded-sm">Know More</button>
   </div>
-
   <About />
   <Features />
   <Liner />
@@ -150,13 +149,6 @@ function m() {
 </template>
 
 <style scoped>
-.head {
-  height: 95vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('') no-repeat center;
-  background-size: cover;
-
-}
-
 /* .router-link-exact-active div {
   width: 50%;
   height: 0.25rem;
