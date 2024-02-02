@@ -25,6 +25,7 @@ img{
   button:hover {
     background-color: #0e3782;
     transition: 0.5s;
+    user-select: none;
   }
 }
 
@@ -34,6 +35,9 @@ img{
   }
 
 
+}
+::selection{
+  background: #949494;
 }
 
 .swiper-button-next,
