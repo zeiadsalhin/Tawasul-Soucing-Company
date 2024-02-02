@@ -106,17 +106,17 @@ function m() {
         <nav class="text-lg font-semibold flex justify-center space-x-5">
           <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Home
           </RouterLink>
-          <RouterLink to="/1" active-class="text-blue-800" class="hover:text-blue-800">Our Services
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Our Services
           </RouterLink>
-          <RouterLink to="/2" active-class="text-blue-800" class="hover:text-blue-800">Our Work
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Our Work
           </RouterLink>
-          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Required Documents
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Required Documents
           </RouterLink>
-          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">How to get a contract
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">How to get a contract
           </RouterLink>
-          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Member SignIn
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Member SignIn
           </RouterLink>
-          <RouterLink to="/3" active-class="text-blue-800" class="hover:text-blue-800">Demanding Jobs
+          <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Demanding Jobs
           </RouterLink>
           <button href="#" class="px-5 bg-blue-600 text-white font-medium rounded-full">Contact</button>
           <button href="#" class="px-2 hover:bg-transparent font-medium rounded-full">عربي</button>
