@@ -21,61 +21,62 @@ function m() {
   <Swiperview />
 
   <!--mob-->
-  <div class=" flex justify-center">
-    <div class="menu notactive space-y-3 bg-gray-600 text-xl font-semibold bg-transparent text-gray-300 bg-gray-00 "
-      id="menu">
+  <div class="dim mobile">
+    <div class=" flex justify-center">
+      <div class="menu notactive space-y-3 bg-gray-600 text-xl font-semibold bg-transparent text-gray-300 bg-gray-00 "
+        id="menu">
 
-      <div class="options mt-10 mb-10 space-y-2">
-        <RouterLink to="/" @click="m"><a href="#" class="block -mb-6">Home</a></RouterLink>
-        <!-- <hr class="border-1 rounded border-gray-400 m- opacity-50 "> -->
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Services</RouterLink>
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Work</RouterLink>
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">Required Documents</RouterLink>
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">How to get a contract</RouterLink>
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">Member SignIn</RouterLink>
-        <RouterLink to="/" @click="m" id="menub" class="block p-2">Demanding Jobs</RouterLink>
-        <a href="#" @click="m" class="block p-4 bg-slate-800 font-medium w-11/12 mx-auto rounded-lg">Contact</a>
+        <div class="options mt-10 mb-10 space-y-2">
+          <RouterLink to="/" @click="m"><a href="#" class="block -mb-6">Home</a></RouterLink>
+          <!-- <hr class="border-1 rounded border-gray-400 m- opacity-50 "> -->
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Services</RouterLink>
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">Our Work</RouterLink>
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">Required Documents</RouterLink>
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">How to get a contract</RouterLink>
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">Member SignIn</RouterLink>
+          <RouterLink to="/" @click="m" id="menub" class="block p-2">Demanding Jobs</RouterLink>
+          <a href="#" @click="m" class="block p-4 bg-slate-800 font-medium w-11/12 mx-auto rounded-lg">Contact</a>
+        </div>
+        <hr class="border-1 rounded border-gray-600 m-10 opacity-50 ">
+        <div class="mb mt-20">
+          <button @click="m" id="menub" class="md:hidde justify-between hover:bg-transparent">
+            <div class="container dark:invert px-4">
+              <div class="bar11"></div>
+              <div class="bar22"></div>
+              <div class="bar33"></div>
+            </div>
+          </button>
+        </div>
       </div>
-      <hr class="border-1 rounded border-gray-600 m-10 opacity-50 ">
-      <div class="mb mt-20">
-        <button @click="m" id="menub" class="md:hidden justify-between hover:bg-transparent">
+
+    </div>
+
+    <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidde justify-between font-semibold ">
+      <div class="flex justify-between">
+        <a href="https://pactel.info" onclick=""> <img src="/logo.svg" width="80" height="60" class="justify-between m-4"
+            alt="logo"></a>
+        <!-- <h1 style="font-weight: 800;" class="p-3 text-3xl text-gray-300">Courses</h1> -->
+        <button @click="m" id="menub" class="md:hidde justify-between hover:bg-transparent">
           <div class="container dark:invert px-4">
-            <div class="bar11"></div>
-            <div class="bar22"></div>
-            <div class="bar33"></div>
+            <div class="bar1">
+              <hr class="border-2 bg-black border-black">
+            </div>
+            <!-- <div class="bar2">
+              <hr class="border-2 bg-black border-black">
+            </div> -->
+            <div class="bar3">
+              <hr class="border-2 bg-black border-black">
+            </div>
           </div>
         </button>
       </div>
-    </div>
 
+    </nav>
   </div>
-
-  <nav class="nav bg-gray-500 bg-transparent text-gray-200 md:hidden justify-between font-semibold ">
-    <div class="flex justify-between">
-      <a href="https://pactel.info" onclick=""> <img src="/logo.svg" width="80" height="60" class="justify-between m-4"
-          alt="logo"></a>
-      <!-- <h1 style="font-weight: 800;" class="p-3 text-3xl text-gray-300">Courses</h1> -->
-      <button @click="m" id="menub" class="md:hidden justify-between hover:bg-transparent">
-        <div class="container dark:invert px-4">
-          <div class="bar1">
-            <hr class="border-2 bg-black border-black">
-          </div>
-          <!-- <div class="bar2">
-              <hr class="border-2 bg-black border-black">
-            </div> -->
-          <div class="bar3">
-            <hr class="border-2 bg-black border-black">
-          </div>
-        </div>
-      </button>
-    </div>
-
-  </nav>
-
   <!---->
   <RouterView />
   <!-- <div class="bar"></div> -->
-  <header class=" flex-col justify-center mx-auto text-black bg-gray-200 shadow-lg hiddenm">
+  <header class=" flex-col justify-center mx-auto text-black bg-gray-200 shadow-lg desktop">
     <div class="up flex justify-around -space-x-32 bg-slate-950 text-white p-2">
       <div class="flex justify-start mr-96"><img alt="logo" class="logo" width="70" height="100" src="/logo.svg">
       </div>
@@ -101,9 +102,9 @@ function m() {
       </div>
     </div>
 
-    <div class="flex justify-center space-x-20 p-2">
+    <div class="flex justify-center space-x-28 p-2.5">
       <div class="my-auto">
-        <nav class="text-lg font-semibold flex justify-center space-x-5">
+        <nav class="text-lg font-semibold flex justify-center space-x-7">
           <RouterLink to="/" active-class="text-blue-800" class="hover:text-blue-800">Home
           </RouterLink>
           <RouterLink to="/1" active-class="text-blue-800" class="hover:text-blue-800">Our Services
@@ -118,9 +119,11 @@ function m() {
           </RouterLink>
           <RouterLink to="/7" active-class="text-blue-800" class="hover:text-blue-800">Demanding Jobs
           </RouterLink>
-          <button href="#" class="px-5 bg-blue-600 text-white font-medium rounded-full">Contact</button>
-          <button href="#" class="px-2 hover:bg-transparent font-medium rounded-full">عربي</button>
         </nav>
+      </div>
+      <div class="nav my-auto space-x-4">
+        <button href="#" class="px-5 py-1 bg-blue-600 text-white font-medium rounded-full">Contact</button>
+        <button href="#" class="px-2 py-1 hover:bg-transparent font-medium rounded-full">عربي</button>
       </div>
     </div>
   </header>

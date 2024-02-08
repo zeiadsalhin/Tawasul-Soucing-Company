@@ -4,7 +4,7 @@
     <swiper :autoplay="{
         delay: 2000,
         disableOnInteraction: false,
-    }" :effect="'fade'" :navigation="true" :pagination="{
+    }" :loop="true" :effect="'fade'" :navigation="true" :pagination="{
     dynamicBullets: true,
 }" :modules="modules" class="mySwiper">
         <swiper-slide><img

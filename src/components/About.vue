@@ -28,7 +28,7 @@
                     varius scelerisque at bibendum tortor ante a diam.</p>
                 <!-- <button class="m-6 p-3 rounded-md bg-blue-700 text-white">Request Estimate</button> -->
             </div>
-            <div class="img md:my-20 md:p-5 p-5 text-sm"><img class="rounded-lg" width="5200" height="100%"
+            <div class="img md:my-20 md:p-5 p-5 text-sm"><img class="rounded-3xl md:p-5" width="5200" height="100%"
                     src="/tawasul.jpg">
                 <!-- <div class="text bg-red-600 text-white p-3 rounded-tl-3xl -translate-x-10 -translate-y-12 w-fit">
                     <h1 class="text-xl font-bold">Call Us now</h1>
